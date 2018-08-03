@@ -1,0 +1,97 @@
+@font-face {
+	src: local('Fontdinerdotcom Huggable');
+    src: url('https://www.dafont.com/fontdinerdotcom-huggable.font'); 
+}
+*{
+	cursor: default;
+}
+body{
+	margin: 0;
+	background-color: #232323;
+	text-align: center; 
+}
+h1{
+	font-size: 50px;
+	padding: 10px;
+	font-family: "Fontdinerdotcom Huggable";
+	text-align: center;
+	background-color: whitesmoke;
+	margin: 0;
+	margin-bottom: 5%;
+}
+
+/* The Options Strip */
+
+nav{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 15px;
+	font-family: "Arial";
+	font-size: 30px;
+	margin-bottom: 20px;
+	background-color: gainsboro;
+}
+.strip{
+	margin: 0 0 0 26.5%;
+	padding: 17px 10px 10px 10px;
+}
+#restart,button{
+	outline: none;
+  border: none;
+  display: block;
+  position: relative;
+  background: dimgray;
+  opacity: 0.85;
+  font-size: 16px;
+	color: white;
+  text-transform: uppercase;
+	letter-spacing: 2px;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 5px;
+  transition: opacity 0.2s ease-in;
+}
+
+#restart:hover,button:hover {
+	opacity: 0.6;
+}
+
+#restart{
+	margin-right: 5px;
+}
+
+/* The GameBoard */
+
+.gameBoard{
+	background-color: whitesmoke;
+	display: flex;
+	flex-wrap: wrap;
+	width: 420px;
+	height: 420px; 
+	max-width: 420px;
+	margin: auto;
+}
+.cell{
+	background-color: steelblue;
+	width: 40px;
+	height: 40px; 
+	border: 1px solid dimgray;
+	text-align: center;
+	font-size: 25px;
+	transition: background-color 0.2s ease-in;
+	transition: background-color 0.2s;
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	font-family:"";
+}
+.cell:hover{
+	opacity: 0.7;
+}
+
+.cellElement{
+	visibility: hidden;
+}
+

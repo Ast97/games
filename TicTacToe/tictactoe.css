@@ -1,0 +1,138 @@
+@font-face {
+	src: local('Fontdinerdotcom Huggable');
+    src: url('https://www.dafont.com/fontdinerdotcom-huggable.font'); 
+}
+body{
+	margin: 0;
+	background-color: #232323;
+	text-align: center; 
+}
+nav{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 15px;
+	font-family: "Arial";
+	font-size: 30px;
+	margin-bottom: 20px;
+	background-color: gainsboro;
+}
+
+.strip{
+	padding: 17px 10px 10px 10px;
+}
+.square{
+	width:30%;
+	background: steelblue;
+	list-style-type: none;
+	float: left;
+	margin: 1%;
+	border-radius: 5%;
+	font-family:"Fontdinerdotcom Huggable";
+	font-weight: bolder;
+	color: white;
+	font-size: 95px;
+	border: none;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+}
+
+ul{
+	margin: 30px auto 60px auto;
+	max-width: 400px;
+	opacity: 0;
+	animation: 0.5s slidefade 0.5s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0 auto;
+	}
+}
+.square{
+	font-family:"Fontdinerdotcom Huggable";
+	font-weight: bolder;
+	float: left;
+	background-color: steelblue;
+	color: white;
+	font-size: 95px;
+	border-radius: 5%;
+	border: none;
+	width: 30%;
+	margin: 1.66%;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
+}
+
+.square:hover{
+	opacity: 0.75;
+}
+
+h1{
+	font-size: 50px;
+	padding: 10px;
+	font-family: "Fontdinerdotcom Huggable";
+	text-align: center;
+	background-color: whitesmoke;
+	margin: 0;
+}
+
+button{
+	outline: none;
+  border: none;
+  display: block;
+  position: relative;
+  background: dimgray;
+  opacity: 0.85;
+  font-size: 16px;
+	color: white;
+  text-transform: uppercase;
+	letter-spacing: 2px;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 5px;
+  transition: opacity 0.2s ease-in;
+}
+
+button:hover {
+	opacity: 0.6;
+}
+
+@media (max-width: 400px) {
+	nav{
+		padding-left: 2px;
+		font-size: 15px;
+		height: 30px;
+		flex-direction: column;
+	}
+	.strip{
+		padding-top: 5px;
+	}
+	button{
+		padding: 10px;
+		font-size: 12px;
+		line-height: 10px;
+	}
+	h1{
+		font-size: 40px;
+		padding: 5px;
+	}
+	ul{
+		position: relative;
+		right: 7%;
+		max-width: 250px;
+		height: 250px;
+	}
+	.square{
+		width: 30%;
+		margin: 1.66%;
+		padding-bottom: 10px;
+		font-size: 50px;
+	}
+}

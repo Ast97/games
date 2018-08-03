@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minesweeper</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="minesweeper.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+</head>
+<body>
+<h1>Minesweeper</h1>
+<nav>
+      <li><button onclick="showAll()">GIVE UP:(</button><li>
+      <li class="strip"><span id="result"></span></li>
+      <input id="restart" type="button" value="Restart" onClick="window.location.reload()">
+     
+</nav>
+	<div class="gameBoard"></div>
+	<script type="text/javascript" src="minesweeper.js"></script>
+</body>
+</html>
